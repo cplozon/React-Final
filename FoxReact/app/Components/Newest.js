@@ -93,7 +93,7 @@ var Main = React.createClass({
               </div>
               <div className="panel-body">
                 <ul className="list-group">
-                  Trump Does something
+                  Test Data Info
                 </ul>
               </div>
             </div>

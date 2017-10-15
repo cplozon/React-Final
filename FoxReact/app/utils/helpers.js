@@ -1,8 +1,6 @@
 var request = require("request");
 var cheerio = require("cheerio");
 
-
- 
  // This function will scrape the NYTimes website (cb is our callback)
  var helpers = function(cb) {
    // Use the request package to take in the body of the page's html
@@ -21,10 +19,9 @@ var cheerio = require("cheerio");
  
        var sum = $(this).children(".summary").text().trim();
  
-       // So long as our headline and sum and url aren't empty or undefined, do the following
+     
        if (head && sum && url) {
-         // This section uses regular expressions and the trim function to tidy our headlines and summaries
-         // We're removing extra lines, extra spacing, extra tabs, etc.. to increase to typographical cleanliness.
+         
          var headNeat = head.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
          var sumNeat = sum.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
  

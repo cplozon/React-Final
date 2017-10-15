@@ -14,12 +14,7 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 app.use(express.static('./public'));
 
-//var link = 'mongodb://heroku_zpgkpj4r:gnvnf7kmeruhl6caa68s0qr70e@ds151137.mlab.com:51137/heroku_zpgkpj4r';
-//Local link
-// var link = 'mongodb://localhost/nytreact';
-
-//mongoose.connect(link);
-var db = process.env.MONGODB_URI || "mongodb://localhost/NYT";
+var db = process.env.MONGODB_URI || "mongodb://localhost/FoxNews";
 
 mongoose.connect('error', function (err) {
   console.log('Mongoose Error: ', err);
