@@ -49,7 +49,7 @@ var Main = React.createClass({
 
         <li className="list-group-item">
           <h3>
-              <span><em>Oops! It looks like you haven't saved any articles yet!</em></span>
+              <span><em>You have no articles saved</em></span>
           </h3>
         </li>
 
